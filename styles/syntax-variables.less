@@ -2,7 +2,7 @@
 
 // Custom Syntax Variables -----------------------------------
 
-@syntax-cursor-line: hsla(@syntax-hue, 100%,  80%, .04); // needs to be semi-transparent to show serach results
+@syntax-cursor-line: hsla(@syntax-hue, 100%,  80%, .04); // needs to be semi-transparent to show search results
 @syntax-bracket-matcher-background-color: lighten(@syntax-background-color, 6%);
 
 
@@ -11,7 +11,7 @@
 // General colors
 @syntax-text-color:            @syntax-base-text-color;
 @syntax-cursor-color:          @syntax-base-accent-color;
-@syntax-selection-color:       lighten(@syntax-background-color, 10%);
+@syntax-selection-color:       lighten(@syntax-background-color, 30%);
 @syntax-selection-flash-color: @syntax-base-accent-color;
 @syntax-background-color:      @syntax-base-background-color;
 
@@ -25,10 +25,10 @@
 @syntax-result-marker-color-selected: @syntax-base-accent-color;
 
 // Gutter colors
-@syntax-gutter-text-color: darken(@syntax-text-color, 26%);
-@syntax-gutter-text-color-selected: @syntax-text-color;
-@syntax-gutter-background-color: @syntax-background-color; // unused
-@syntax-gutter-background-color-selected: lighten(@syntax-background-color, 2%);
+@syntax-gutter-text-color: darken(@syntax-base-text-color, %70);
+@syntax-gutter-text-color-selected: @cyan;
+@syntax-gutter-background-color: darken(@syntax-background-color, 1%);
+@syntax-gutter-background-color-selected: darken(@syntax-background-color, 1%);
 
 // Git colors - For git diff info. i.e. in the gutter
 @syntax-color-renamed:  hsl(208, 100%, 60%);
@@ -37,7 +37,7 @@
 @syntax-color-removed:  hsl(0,    70%, 60%);
 
 // For language entity colors
-@syntax-color-variable: @red;
+@syntax-color-variable: @blue;
 @syntax-color-constant: @orange;
 @syntax-color-property: @syntax-text-color;
 @syntax-color-value: @syntax-text-color;

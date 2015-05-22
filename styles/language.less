@@ -2,7 +2,6 @@
 
 .comment {
   color: @dark-gray;
-  font-style: italic;
 }
 
 .entity {
@@ -17,18 +16,18 @@
 }
 
 .keyword {
-  color: @purple;
+  color: @green;
 
   &.control {
-    color: @purple;
+    color: @orange;
   }
 
   &.operator {
-    color: @syntax-text-color;
+    color: @dark-text;
   }
 
   &.other.special-method {
-    color: @blue;
+    color: @dark-orange;
   }
 
   &.other.unit {
@@ -37,7 +36,7 @@
 }
 
 .storage {
-  color: @purple;
+  color: @orange;
 
   &.type {
     &.annotation,
@@ -79,7 +78,7 @@
 }
 
 .variable {
-  color: @red;
+  color: @syntax-color-variable;
 
   &.interpolation {
     color: @dark-red;
@@ -97,11 +96,12 @@
 
 .string {
   color: @green;
-
+  background-color: @dark-green-background;
 
   &.regexp {
     color: @cyan;
-
+    background-color: @light-orange;
+    
     .source.ruby.embedded {
       color: @bright-orange;
     }
@@ -110,6 +110,10 @@
   &.other.link {
     color: @red;
   }
+}
+
+.brace {
+  color: darken(@syntax-text-color, 20%);
 }
 
 .punctuation {
@@ -124,7 +128,7 @@
     &.separator,
     &.seperator,
     &.array {
-      color: @syntax-text-color;
+      color: darken(@syntax-text-color, 20%);
     }
 
     &.heading,
@@ -172,7 +176,7 @@
 
 .entity {
   &.name.function {
-    color: @blue;
+    color: @cyan;
   }
 
   &.name.class,

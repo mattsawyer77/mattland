@@ -1,8 +1,8 @@
 
 // Config -----------------------------------
-@syntax-hue:          220;
-@syntax-saturation:   24%;
-@syntax-brightness:   20%;
+@syntax-hue:          190;
+@syntax-saturation:   18%;
+@syntax-brightness:   15%;
 
 // Base colors -----------------------------------
 @syntax-base-accent-color:      hsl(@syntax-hue, 100%, 66% );
@@ -13,8 +13,8 @@
 
 // Colors: Mix Base16 Tomorrow with Theme hue -----------------------------------
 @syntax-mix-base:       hsl(@syntax-hue, 100%, 66%);
-@syntax-mix-grey:       12%;
-@syntax-mix-color:      0%;
+@syntax-mix-grey:       25%;
+@syntax-mix-color:      20%;
 
 @very-light-gray: mix( @syntax-mix-base, hsl(0,0%,84%), @syntax-mix-grey);
 @light-gray:      mix( @syntax-mix-base, hsl(0,0%,72%), @syntax-mix-grey);
@@ -26,8 +26,13 @@
 @blue:            mix( @syntax-mix-base, #61AEEF, @syntax-mix-color);
 @purple:          mix( @syntax-mix-base, #C679DD, @syntax-mix-color);
 @green:           mix( @syntax-mix-base, #97C378, @syntax-mix-color);
-@red:             mix( @syntax-mix-base, #DF6A73, @syntax-mix-color);
-@dark-red:        mix( @syntax-mix-base, #BE4F44, @syntax-mix-color);
-@orange:          mix( @syntax-mix-base, #D29B67, @syntax-mix-color);
+@light-green:     mix( @syntax-mix-base, #AFE38C, @syntax-mix-color);
+@red:             mix( @syntax-mix-base, #DF1616, @syntax-mix-color);
+@dark-red:        mix( @syntax-mix-base, #A72515, @syntax-mix-color);
+@orange:          mix( @syntax-mix-base, #C38E2E, @syntax-mix-color);
 @light-orange:    mix( @syntax-mix-base, #E5C17C, @syntax-mix-color);
 @bright-orange:   mix( @syntax-mix-base, #FF8000, @syntax-mix-color);
+@dark-orange:     mix( @syntax-mix-base, #8F530D, @syntax-mix-color);
+
+@dark-green-background: mix(@syntax-base-background-color, hsl(100,5%,20%), @syntax-mix-grey);
+@dark-text:             mix(@syntax-base-accent-color, hsl(0,0,0), 75%);
